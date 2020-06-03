@@ -1,4 +1,9 @@
-package com.example.demo.repository;
+package com.example.demo;
 
-public interface House {
+import com.example.demo.model.House;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface HouseRepository extends CrudRepository<House, Integer> {
 }
